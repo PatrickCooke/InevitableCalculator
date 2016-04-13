@@ -43,6 +43,7 @@ float result = 0;
     sub = false;
     multi = false;
     divide = false;
+    equal = false;
 }
 
 - (IBAction)equalsButtonPressed:(id)button {
@@ -75,7 +76,8 @@ float result = 0;
     sub = false;
     multi = false;
     divide = false;
-    _currentNumberlabel.text = @"";
+    equal = true;
+//    _currentNumberlabel.text = @"";
 }
 
 - (IBAction)subButtonPressed:(id)button {
@@ -85,7 +87,8 @@ float result = 0;
     sub = true;
     multi = false;
     divide = false;
-    _currentNumberlabel.text = @"";
+    equal = true;
+//    _currentNumberlabel.text = @"";
 }
 
 - (IBAction)multiButtonPressed:(id)button {
@@ -95,7 +98,8 @@ float result = 0;
     sub = false;
     multi = true;
     divide = false;
-    _currentNumberlabel.text = @"";
+    equal = true;
+//    _currentNumberlabel.text = @"";
 }
 
 - (IBAction)divideButtonPressed:(id)button {
@@ -105,7 +109,8 @@ float result = 0;
     sub = false;
     multi = false;
     divide = true;
-    _currentNumberlabel.text = @"";
+    equal = true;
+//    _currentNumberlabel.text = @"";
 }
     
 - (IBAction)squareButtonPressed:(id)sender{
