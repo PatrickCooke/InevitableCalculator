@@ -303,6 +303,7 @@
 				4355260A1CBD67FA00411321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
