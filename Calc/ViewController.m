@@ -64,6 +64,7 @@ float result = 0;
     sub = false;
     multi = false;
     divide = false;
+    equal = true;
 }
 
 
@@ -155,9 +156,16 @@ float result = 0;
 
 # pragma mark - Number Buttons
 
+
 - (IBAction)oneButtonPressed:(id)button {
     NSLog(@"One Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"1"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"1"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"1"];
+    }
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -167,7 +175,13 @@ float result = 0;
 
 - (IBAction)twoButtonPressed:(id)button {
     NSLog(@"two Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"2"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"2"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"2"];
+    }
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -177,7 +191,14 @@ float result = 0;
 
 - (IBAction)threeButtonPressed:(id)button {
     NSLog(@"three Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"3"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"3"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"3"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -186,7 +207,14 @@ float result = 0;
 }
 - (IBAction)fourButtonPressed:(id)button {
     NSLog(@"four Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"4"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"4"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"4"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -195,7 +223,14 @@ float result = 0;
 }
 - (IBAction)fiveButtonPressed:(id)button {
     NSLog(@"five Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"5"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"5"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"5"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -204,7 +239,14 @@ float result = 0;
 }
 - (IBAction)sixButtonPressed:(id)button {
     NSLog(@"six Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"6"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"6"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"6"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -214,7 +256,14 @@ float result = 0;
 
 - (IBAction)sevenButtonPressed:(id)button {
     NSLog(@"seven Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"7"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"7"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"7"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -224,7 +273,14 @@ float result = 0;
 
 - (IBAction)eightButtonPressed:(id)button {
     NSLog(@"eight Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"8"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"8"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"8"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -234,7 +290,14 @@ float result = 0;
 
 - (IBAction)nineButtonPressed:(id)button {
     NSLog(@"nine Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"9"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"9"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"9"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
@@ -244,7 +307,14 @@ float result = 0;
 
 - (IBAction)zeroButtonPressed:(id)button {
     NSLog(@"zero Pressed");
-    _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"0"];
+    if (equal) {
+        _currentNumberlabel.text = [NSString stringWithFormat:@""];
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"0"];
+        equal = false;
+    } else {
+        _currentNumberlabel.text = [_currentNumberlabel.text stringByAppendingString:@"0"];
+    }
+
     if (operatorPressed) {
         rightSideNumber = [_currentNumberlabel.text floatValue];
     } else {
